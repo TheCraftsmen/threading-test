@@ -9,3 +9,6 @@ Para compilar go usar:
 	go build -buildmode=c-shared -o shfp.so shfp.go
 
 test hechos con python 3.6
+
+congo.py usa go
+test.py usa python

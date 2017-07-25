@@ -2,8 +2,6 @@ from threading import Thread, Lock
 import requests
 import timeit
 
-MUTEX = Lock()
-
 
 def add():
     threads = []

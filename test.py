@@ -1,9 +1,9 @@
-from threading import Thread, Lock
+from threading import Thread
 import requests
 import timeit
 
 
-def add():
+def worker():
     threads = []
     start_time = timeit.default_timer()
     for a in range(0, 1000):
@@ -22,4 +22,4 @@ def fucc():
     print(r.status_code)
 
 if __name__ == '__main__':
-    add()
+    worker()
